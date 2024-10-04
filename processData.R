@@ -8,7 +8,7 @@ varname <- names(varname)
 data <- read.table("household_power_consumption.txt",
                    sep = ";",
                    skip = 66637, 
-                   nrows = 2880)
+                   nrows = 2881)
 names(data) <- tolower(varname)
 write.csv(data, "assignment_data.csv", row.names = F)
 rm(list = ls())
